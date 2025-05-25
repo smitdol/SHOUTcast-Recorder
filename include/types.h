@@ -71,6 +71,7 @@ typedef struct
 	unsigned int bytes_count_total; // Number of bytes received since beginning
 	unsigned int blocks_count; // Number of HTTP blocks received
 	unsigned int metadata_count; // Number of metadata blocks received since beginning
+        int ignoring; // ignoring title change
 } Stream;
 
 void newfilename(Stream* stream,const char* title);

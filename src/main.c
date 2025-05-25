@@ -57,6 +57,7 @@ int main(int argc, char *argv[])
     stream.duration=0;
     stream.repeat=0;
     stream.TA = 1;
+    stream.ignoring = FALSE;
     memset(stream.basefilename, 0, TITLE_SIZE);
     strncpy(stream.basefilename,"radio",TITLE_SIZE-1);
     memset(stream.stream_title, 0, TITLE_SIZE);
